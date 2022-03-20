@@ -1,0 +1,14 @@
+AT+CGATT=1				//ATTACH TO NETWORK
+AT+CSTT="bluevia.movistar.es"			//
+AT+CIPMUX=0
+AT+CIFSR 		//localip
+AT+CIPSTART="TCP","192.168.0.119","4444"
+AT+CIICR
+AT+CIPSTATUS
+AT+CIPCLOSE
+AT+CIPSHUT
+
+
+AT+QISEND			//send tcp data
+
+
